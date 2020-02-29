@@ -1,3 +1,5 @@
+default: clean package
+
 clean:
 	@rm -rf target
 

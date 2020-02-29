@@ -27,7 +27,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         file: target/validator.tar.gz
-        name: validator-${TAG}.tar.gz
+        name: ubl2-validator-${TAG}.tar.gz
 
     - name: Upload zip
       uses: klakegg/github-upload@v0.9.1
@@ -36,4 +36,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         file: target/validator.zip
-        name: validator-${TAG}.zip
+        name: ubl2-validator-${TAG}.zip
